@@ -77,3 +77,34 @@
 .columns-wrapper.godrej-columns .columns {
   display: flex;
 }
+.godrej-block.tag-div .godrej-container {
+  display: flex;
+}
+
+.godrej-block.tag-div .godrej-container content {
+  width: 10%;
+}
+
+.godrej-block.tag-div .godrej-container :nth-child(2) ul {
+  margin-top: 0px;
+  width: 90%;
+  display: inline;
+  margin-bottom: 35px;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.godrej-block.tag-div .godrej-container :nth-child(2) ul li {
+  padding: 8px 15px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  margin: 0;
+  cursor: pointer;
+  display: inline-block;
+  list-style-type: none;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
