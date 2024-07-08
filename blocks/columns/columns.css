@@ -47,7 +47,7 @@
 
   .columns.godrej-columns .card-block {
     flex-direction: column;
-    gap: 0px;
+    gap: 8px;
   }
 }
 
@@ -58,13 +58,13 @@
 }
 
 
-.columns.godrej-columns .card-block :hover {
+.columns.godrej-columns .card-block:hover {
   text-decoration: none;
   transition: all .4s cubic-bezier(.25, .74, .22, .99);
   border-color: transparent;
 }
 
-.columns.godrej-columns .card-block :hover::after {
+.columns.godrej-columns .card-block:hover::after {
   -webkit-box-shadow: 0 25px 35px rgba(0, 0, 0, .45);
   -moz-box-shadow: 0 25px 35px rgba(0, 0, 0, .45);
   -ms-box-shadow: 0 25px 35px rgba(0, 0, 0, .45);
