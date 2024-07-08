@@ -19,6 +19,20 @@
   display: block;
 }
 
+.columns.godrej-columns .card-block {
+  flex-direction: column;
+  gap: 0px;
+  max-width: 350px;
+  height: 100%;
+  min-height: 1px;
+  outline: 0;
+  padding: 0 8px;
+  margin-bottom: 60px;
+  background-color: white;
+  border: 2px solid #EDEDED;
+  border-radius: 10px;
+}
+
 @media (width >=900px) {
   .columns>div {
     align-items: center;
@@ -31,7 +45,7 @@
     order: unset;
   }
 
-  .columns.godrej-columns .card-block div {
+  .columns.godrej-columns .card-block {
     flex-direction: column;
     gap: 0px;
   }
@@ -43,20 +57,14 @@
   gap: 0px;
 }
 
-.columns.godrej-columns .card-block div {
-  max-width: 350px;
-  background-color: white;
-  border: 2px solid #EDEDED;
-  border-radius: 10px;
-}
 
-.columns.godrej-columns .card-block div :hover {
+.columns.godrej-columns .card-block :hover {
   text-decoration: none;
   transition: all .4s cubic-bezier(.25, .74, .22, .99);
   border-color: transparent;
 }
 
-.columns.godrej-columns .card-block div :hover::after {
+.columns.godrej-columns .card-block :hover::after {
   -webkit-box-shadow: 0 25px 35px rgba(0, 0, 0, .45);
   -moz-box-shadow: 0 25px 35px rgba(0, 0, 0, .45);
   -ms-box-shadow: 0 25px 35px rgba(0, 0, 0, .45);
@@ -64,13 +72,8 @@
   box-shadow: 0 25px 35px rgba(0, 0, 0, .45);
 }
 
-.columns.godrej-columns .card-block .columns-img-col {
-  max-height: 160px;
-  padding: 0 8px;
-}
 
 .columns.godrej-columns .card-block :nth-child(2) {
-  max-height: 85px;
   color: #273043;
   text-overflow: ellipsis;
   overflow: hidden;
