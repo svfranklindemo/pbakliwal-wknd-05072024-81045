@@ -1,4 +1,4 @@
-.blog main{
+.blog main {
   padding-left: 8%;
   padding-right: 8%;
   padding-top: 70px;
@@ -9,11 +9,19 @@
   letter-spacing: -.4px;
   color: rgba(0, 0, 0, .6);
 }
+
 .section.blog-container {
- background-color: white;
+  background-color: white;
+  width: 100%;
+  float: left;
+  padding: 60px 130px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 100px;
 }
 
-.godrej-block.published-date .godrej-container .content{
+.godrej-block.published-date .godrej-container .content {
   font-weight: 400;
   letter-spacing: normal;
   font-size: 10px;
@@ -21,4 +29,33 @@
   opacity: 1;
   color: #00000099 !important;
   text-transform: capitalize !important;
+}
+
+.godrej-block.blog-heading .godrej-container .content h1 {
+  color: #000;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.godrej-block.quote-text .godrej-container .content em {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.godrej-block.blog-text .godrej-container .content p {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
