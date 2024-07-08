@@ -47,10 +47,10 @@
   border-radius: 10px;
 }
 
-.columns.godrej-columns .columns-img-col{
+.columns.godrej-columns .card-block .columns-img-col{
   max-height: 160px;
 }
 
-.columns.godrej-columns .columns-text-col{
+.columns.godrej-columns .card-block :nth-child(2){
   max-height: 85px;
 }
