@@ -31,7 +31,7 @@
     order: unset;
   }
 
-  .columns.godrej-columns>div {
+  .columns.godrej-columns .card-block div {
     flex-direction: column;
     gap: 0px;
   }
@@ -43,20 +43,20 @@
   gap: 0px;
 }
 
-.columns.godrej-columns div {
+.columns.godrej-columns .card-block div {
   max-width: 350px;
   background-color: white;
   border: 2px solid #EDEDED;
   border-radius: 10px;
 }
 
-.columns.godrej-columns div :hover {
+.columns.godrej-columns .card-block div :hover {
   text-decoration: none;
   transition: all .4s cubic-bezier(.25, .74, .22, .99);
   border-color: transparent;
 }
 
-.columns.godrej-columns div :hover::after {
+.columns.godrej-columns .card-block div :hover::after {
   -webkit-box-shadow: 0 25px 35px rgba(0, 0, 0, .45);
   -moz-box-shadow: 0 25px 35px rgba(0, 0, 0, .45);
   -ms-box-shadow: 0 25px 35px rgba(0, 0, 0, .45);
@@ -78,7 +78,6 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
-  -webkit-line-clamp: 2;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
