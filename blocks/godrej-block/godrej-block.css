@@ -63,7 +63,7 @@
   font-style: normal;
 }
 
-.godrej-block.blog-text .godrej-container .content p {
+.godrej-block.blog-text .godrej-container .content p a{
   text-decoration: none;
   color: #AD1E56;
   word-break: break-all;
