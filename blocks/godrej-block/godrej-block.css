@@ -16,6 +16,10 @@
   border-radius: 10px;
 }
 
+.section.top-margin {
+  margin-top: 100px;
+}
+
 .godrej-block.published-date .godrej-container .content {
   font-weight: 400;
   letter-spacing: normal;
@@ -50,7 +54,8 @@
   float: left;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.87);
-  line-height: 1.5;
+  line-height: 24px;
+  letter-spacing: -0.4px;
   text-align: left;
   margin-bottom: 20px;
   font-family: 'Work Sans', sans-serif;
@@ -58,6 +63,16 @@
   font-style: normal;
 }
 
-.godrej-block{
+.godrej-block.blog-text .godrej-container .content p {
+  text-decoration: none;
+  color: #AD1E56;
+  word-break: break-all;
+}
+
+.godrej-block {
   margin-bottom: 20px;
-} 
+}
+
+.columns-wrapper.godrej-columns .columns {
+  display: flex;
+}

@@ -31,3 +31,14 @@
     order: unset;
   }
 }
+
+.columns.godrej-columns{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.columns.godrej-columns div{
+  max-width: 350px;
+}
+
