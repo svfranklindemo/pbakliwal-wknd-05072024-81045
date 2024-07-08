@@ -40,13 +40,14 @@
   line-height: normal;
 }
 
-.godrej-block.quote-text .godrej-container .content em {
+.godrej-block.quote-text .godrej-container .content strong {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.87);
   line-height: 1.5;
   text-align: left;
   margin-bottom: 20px;
   font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
 }
 
 .godrej-block.blog-text .godrej-container .content p {

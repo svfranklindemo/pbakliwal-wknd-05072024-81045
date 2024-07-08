@@ -30,6 +30,9 @@
     flex: 1;
     order: unset;
   }
+  .columns.godrej-columns > div{
+    flex-direction: column;
+  }
 }
 
 .columns.godrej-columns{
@@ -40,5 +43,14 @@
 
 .columns.godrej-columns div{
   max-width: 350px;
+  background-color: white;
+  border-radius: 10px;
 }
 
+.columns.godrej-columns .columns-img-col{
+  max-height: 160px;
+}
+
+.columns.godrej-columns .columns-text-col{
+  max-height: 85px;
+}

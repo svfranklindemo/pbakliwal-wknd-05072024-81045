@@ -12,6 +12,11 @@ export default function decorate(block) {
           // picture is only content in column
           picWrapper.classList.add('columns-img-col');
         }
+        if (picWrapper && picWrapper.children.length === 2) {
+          // picture is only content in column
+          picWrapper.classList.add('columns-img-col');
+          picWrapper.nextElementSibling.classList.add('columns-text-col');
+        }
       }
     });
   });
