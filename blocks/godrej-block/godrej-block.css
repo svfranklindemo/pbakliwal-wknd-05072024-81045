@@ -84,10 +84,7 @@
 
 .godrej-block.tags-div .godrej-container .content {
   width: 10%;
-}
-
-.godrej-block.tags-div .godrej-container :nth-child(2) {
-  width: 90%;
+  margin-right: 20px;
 }
 
 .godrej-block.tags-div .godrej-container :nth-child(2) ul {
@@ -121,6 +118,10 @@
   font-family: 'Work Sans', sans-serif;
   font-style: normal;
   letter-spacing: -.4px;
+}
+
+.blog .default-content-wrapper h4::after,.blog h4::after  {
+  content: none;
 }
 
 .blog .default-content-wrapper{
