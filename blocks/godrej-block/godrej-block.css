@@ -12,12 +12,8 @@
 
 .section.blog-container {
   background-color: white;
-  width: 100%;
-  float: left;
   padding: 60px 130px;
-  background: #FFFFFF;
   border-radius: 10px;
-  position: relative;
   margin-bottom: 100px;
 }
 
@@ -37,6 +33,7 @@
   text-align: left;
   font-size: 30px;
   font-weight: 300;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .godrej-block.quote-text .godrej-container .content em {
@@ -45,6 +42,7 @@
   line-height: 1.5;
   text-align: left;
   margin-bottom: 20px;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .godrej-block.blog-text .godrej-container .content p {
