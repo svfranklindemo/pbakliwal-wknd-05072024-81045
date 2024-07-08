@@ -77,15 +77,15 @@
 .columns-wrapper.godrej-columns .columns {
   display: flex;
 }
-.godrej-block.tag-div .godrej-container {
+.godrej-block.tags-div .godrej-container {
   display: flex;
 }
 
-.godrej-block.tag-div .godrej-container content {
+.godrej-block.tags-div .godrej-container content {
   width: 10%;
 }
 
-.godrej-block.tag-div .godrej-container :nth-child(2) ul {
+.godrej-block.tags-div .godrej-container :nth-child(2) ul {
   margin-top: 0px;
   width: 90%;
   display: inline;
@@ -94,7 +94,7 @@
   margin-top: 0;
 }
 
-.godrej-block.tag-div .godrej-container :nth-child(2) ul li {
+.godrej-block.tags-div .godrej-container :nth-child(2) ul li {
   padding: 8px 15px;
   margin-right: 15px;
   margin-bottom: 10px;
