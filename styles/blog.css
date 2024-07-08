@@ -12,3 +12,13 @@ main{
 .section.blog-container {
    background-color: white;
 }
+
+.published-date div div{
+    font-weight: 400;
+    letter-spacing: normal;
+    font-size: 10px;
+    margin-bottom: 25px;
+    opacity: 1;
+    color: #00000099 !important;
+    text-transform: capitalize !important;
+}
