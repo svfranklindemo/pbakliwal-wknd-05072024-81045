@@ -4,6 +4,7 @@ export default function decorate(block) {
 
   // setup image columns
   [...block.children].forEach((row) => {
+    row.classList.add("card-block");
     [...row.children].forEach((col) => {
       const pic = col.querySelector('picture');
       if (pic) {
@@ -17,9 +18,6 @@ export default function decorate(block) {
     });
   });
 
-  block.children.forEach((div)=>{
-    div.classList.add("card-block");
-  })
 }
 
 
