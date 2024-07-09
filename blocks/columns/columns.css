@@ -103,11 +103,13 @@
     letter-spacing: normal;
     font-size: 10px;
     color: #00000099 !important;
-    margin: 0 0 15px 0;
+    margin: 0;
+    position: relative;
+    right: -225px;
 }
 
 .columns.godrej-columns.published-date .card-block :nth-child(2) h3:nth-of-type(1){
- margin: 0;
+ padding: 10px;
 }
 
 .columns.godrej-columns .card-block :nth-child(3){
