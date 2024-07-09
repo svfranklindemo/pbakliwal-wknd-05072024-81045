@@ -107,30 +107,12 @@
   padding: 0 10px 10px 10px;
   display: flex;
   align-self: flex-start;
-}
-
-.columns.godrej-columns .card-block :nth-child(3)::before{
-  width: 13px;
-  height: 2px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  content: '';
-  background-color: #ad1e56;
-  -webkit-transition: all .15s ease-in-out;
-  -moz-transition: all .15s ease-in-out;
-  -o-transition: all .15s ease-in-out;
-  -ms-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-  margin-left: -36px;
+  align-items: center;
 }
 
 .columns.godrej-columns .card-block :nth-child(3)::after{
   width: 7px;
   height: 12px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
   content: '';
   background: url(/icons/arrow-right-pink.svg) no-repeat right center;
   -webkit-transition: all .15s ease-in-out;
@@ -138,7 +120,7 @@
   -o-transition: all .15s ease-in-out;
   -ms-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
-  margin-left: -30px;
+  margin-left: 5px;
 }
 .columns.godrej-columns img {
   height: 160px;
