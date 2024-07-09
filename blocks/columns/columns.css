@@ -110,7 +110,7 @@
   align-items: center;
 }
 
-.columns.godrej-columns .card-block :nth-child(3)::after{
+.columns.godrej-columns .card-block div:nth-of-type(3)::after{
   width: 7px;
   height: 12px;
   content: '';
