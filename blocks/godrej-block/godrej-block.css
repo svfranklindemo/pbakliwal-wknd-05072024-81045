@@ -101,3 +101,13 @@
 .blog .default-content-wrapper h4::after,.blog h4::after  {
   content: none;
 }
+.godrej-block.blog-heading.centre-align .godrej-container .content{
+  display: flex;
+  justify-content: center;
+}
+
+.godrej-block.blog-heading.centre-align .godrej-container .content .h1{
+  font-size: 62px;
+  color: #273043;
+  letter-spacing: -3px;
+}
