@@ -5,6 +5,7 @@
 - Preview: https://main--pbakliwal-wknd-05072024-81045--svfranklindemo.hlx.page/
 - Live: https://main--pbakliwal-wknd-05072024-81045--svfranklindemo.hlx.live/
 
+
 ## Pre-requisites
 
 Out of the box, this project template uses a pre-configured Adobe Commerce environment. If you want to use your own Adobe Commerce environment, you'll need to update the `configs.xlsx` file in your content repository to have values that match your environment.
