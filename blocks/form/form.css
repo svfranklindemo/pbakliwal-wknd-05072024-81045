@@ -237,12 +237,13 @@
 }
 
 /* blog form*/
-.blog-container.form-image {
+.blog-container .form-image {
   display: none;
 }
 
 .blog-container .form-block-wrapper .form-info {
   background-color: white;
+  text-align: center;
 }
 
 .blog-container .email-sub-form {
