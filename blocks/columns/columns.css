@@ -22,6 +22,7 @@
 .columns.godrej-columns .card-block {
   flex-direction: column;
   gap: 0px;
+  min-width: 310px;
   max-width: 350px;
   height: 100%;
   min-height: 1px;
@@ -32,6 +33,7 @@
   border: 2px solid #EDEDED;
   border-radius: 10px;
   cursor: pointer;
+  flex: 1 0 0;
 }
 
 @media (width >=900px) {
@@ -74,7 +76,7 @@
 }
 
 
-.columns.godrej-columns .card-block :nth-child(2) {
+.columns.godrej-columns .card-block :nth-child(2){
   color: #273043;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -85,9 +87,56 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 1.2;
-  padding: 20px 30px;
+  padding: 20px 10px;
+  display: flex;
+  align-self: flex-start;
 }
 
+.columns.godrej-columns .card-block :nth-child(3){
+  color: #273043;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 10px 10px;
+  display: flex;
+  align-self: flex-start;
+}
+
+.columns.godrej-columns .card-block :nth-child(3)::before{
+  width: 13px;
+  height: 2px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  content: '';
+  background-color: #ad1e56;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+.columns.godrej-columns .card-block :nth-child(3)::after{
+  width: 7px;
+  height: 12px;
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 5px);
+  content: '';
+  background: url(/icons/arrow-right-pink.svg) no-repeat right center;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  -o-transition: all .15s ease-in-out;
+  -ms-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
 .columns.godrej-columns img {
   height: 160px;
   width: 340px;
