@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800&display=swap);
+html, body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+body > main {
+    margin-top: 65px;
+}
+
+.header {
+    .header-nav-wrapper {
+        top: 0;
+
+        &.minimized {
+            .icon {
+                width: 180px;
+            }
+        }
+    }
+
+    .section.nav-brand{
+        /* correct the logo alignment */
+        padding: 10px 10px 0;
+    }
+
+    & nav {
+        max-width: unset;
+
+        & a:any-link {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 16px;
+            text-transform: capitalize;
+            letter-spacing: -0.4px;
+        }
+
+        .nav-sections ul {
+            gap: 0;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+
+    .big-logo {
+        .icon {
+            width: 220px;
+            height: auto;
+
+            & > img {
+                width: 100%;
+                height: auto;
+            }
+
+            transition: width 200ms ease-in-out;
+        }
+    }
+}
+
