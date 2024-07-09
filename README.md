@@ -2,8 +2,9 @@
 
 ## Environments
 
-- Preview: https://main--xsc-wknd-commerce--hlxsites.hlx.page/
-- Live: https://main--xsc-wknd-commerce--hlxsites.hlx.live/
+- Preview: https://main--pbakliwal-wknd-05072024-81045--svfranklindemo.hlx.page/
+- Live: https://main--pbakliwal-wknd-05072024-81045--svfranklindemo.hlx.live/
+
 
 ## Pre-requisites
 
