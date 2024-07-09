@@ -48,7 +48,7 @@
 
   .columns.godrej-columns .card-block {
     flex-direction: column;
-    gap: 8px;
+    margin: 8px;
   }
 }
 
@@ -92,4 +92,8 @@
   height: 160px;
   width: 340px;
   object-fit: cover;
+}
+
+.blog .columns-wrapper{
+  margin-top: 20px;
 }
