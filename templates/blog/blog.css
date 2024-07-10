@@ -19,3 +19,7 @@
   .section.top-margin {
     margin-top: 100px;
   }
+
+  .section-metadata.display-none.block {
+    display: none;
+}
