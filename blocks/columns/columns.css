@@ -88,7 +88,6 @@
   line-height: 1.2;
   padding: 20px 20px 10px 10px;
   display: block;
-  width: 100%;
 }
 
 .columns.godrej-columns.published-date .card-block div:nth-of-type(2) {
@@ -108,7 +107,7 @@
   right: -225px;
 }
 
-.columns.godrej-columns.published-date .card-block div:nth-of-type(2) h3:nth-of-type(1) {
+.columns.godrej-columns .card-block div:nth-of-type(2) h3:nth-of-type(1) {
   padding: 10px;
   color: rgba(0, 0, 0, 0.87);
   cursor: pointer;
