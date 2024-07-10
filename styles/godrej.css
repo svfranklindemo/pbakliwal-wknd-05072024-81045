@@ -128,7 +128,7 @@ body > main {
                 font-weight: 300;
                 letter-spacing: -4px;
                 font-family: 'Work Sans', sans-serif;
-                max-width: 820px;
+                max-width: 880px;
 
                 @media (width < 768px) {
                     font-size: 10px;
