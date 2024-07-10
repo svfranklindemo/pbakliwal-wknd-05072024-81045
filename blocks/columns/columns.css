@@ -51,6 +51,7 @@
   .columns.godrej-columns .card-block {
     flex-direction: column;
     margin: 8px;
+    min-height: 310px;
   }
 }
 
@@ -88,6 +89,7 @@
   line-height: 1.2;
   padding: 20px 20px 10px 10px;
   display: block;
+  width: 94%;
 }
 
 .columns.godrej-columns.published-date .card-block div:nth-of-type(2) {
