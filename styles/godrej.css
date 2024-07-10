@@ -3,19 +3,34 @@ html, body {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
 }
+body > header {
+    height: unset;
+}
 body > main {
-    margin-top: 65px;
+    margin-top: 0;
 }
 
 .header {
     .header-nav-wrapper {
         top: 0;
+        padding: 1.35em 0;
+        /*background: rgba(255,255,255,);*/
+        background: linear-gradient(to bottom, white, rgba(255,255,255,.92));
 
-        &.minimized {
-            .icon {
-                width: 180px;
+        .nav-brand .icon{
+            filter: contrast(100);
+        }
+
+        &:not(.minimized) {
+            background: linear-gradient(to bottom, black, transparent);
+            border: none;
+
+            .nav-brand, .nav-sections, .nav-tools {
+                filter: invert(1);
             }
         }
+
+        transition: background .2s ease-out;
     }
 
     .section.nav-brand{
@@ -31,12 +46,21 @@ body > main {
             font-size: 16px;
             text-transform: capitalize;
             letter-spacing: -0.4px;
+
+            user-select: none;
         }
 
         .nav-sections ul {
-            gap: 0;
+            gap: unset;
             justify-content: flex-end;
             align-items: center;
+        }
+
+        .nav-tools {
+            gap: 10px;
+            @media (width < 768px) {
+                gap: unset;
+            }
         }
     }
 
@@ -51,6 +75,71 @@ body > main {
             }
 
             transition: width 200ms ease-in-out;
+
+            @media (width < 768px) {
+                width: 180px;
+            }
+        }
+    }
+}
+
+.hero-container {
+    &.full-screen {
+        .hero.block {
+            min-height: 100vh;
+            padding: unset;
+
+            & img {
+                object-position: top;
+                object-fit: cover;
+            }
+
+            .hero-image {
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: rgba(0,0,0,.4);
+                }
+            }
+        }
+
+        .hero-desc-wrapper {
+            display: block;
+            background: transparent;
+
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+
+            border: none;
+
+            h1 {
+                color: #fff;
+
+                @media (width < 768px) {
+                    font-size: 10px;
+                }
+
+            }
+        }
+    }
+
+    &.button-small {
+        .button-primary {
+            display: inline-block;
+            padding: 6px 15px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #fff;
+            line-height: 1;
+            border-radius: 4px;
+            background-color: #1A78E5;
         }
     }
 }
