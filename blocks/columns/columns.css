@@ -107,6 +107,27 @@
   right: -225px;
 }
 
+.columns.godrej-columns .card-block div:nth-of-type(2) p:nth-of-type(1) {
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #616060;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  line-height: 1.5;
+  -webkit-line-clamp: 4;
+  height: calc(16px* 1.5* 4);
+  font-size: 14px;
+  line-height: 1.4;
+  -webkit-line-clamp: 3;
+  height: calc(14px* 1.4* 3);
+  margin-bottom: 10px;
+}
+
 .columns.godrej-columns .card-block div:nth-of-type(2) h3:nth-of-type(1) {
   padding: 10px;
   color: rgba(0, 0, 0, 0.87);
