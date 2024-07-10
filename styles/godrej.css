@@ -9,15 +9,34 @@ body > header {
     height: unset;
 }
 
-body > main {
-    margin-top: 0;
+body {
+    &.modern-nav > main {
+        margin-top: 0;
+    }
+    &:not(.modern-nav) > main {
+        margin-top: 60px;
+    }
 }
+
+@media (width >= 1024px) {
+    .modern-nav .header .header-nav-wrapper {
+
+        &:not(.minimized) {
+            background: linear-gradient(to bottom, black, transparent);
+            .nav-brand, .nav-sections, .nav-tools {
+                filter: invert(1);
+            }
+        }
+
+    }
+}
+
 
 .header {
     .header-nav-wrapper {
         top: 0;
         padding: 1.35em 0;
-        /*background: rgba(255,255,255,);*/
+
         background: linear-gradient(to bottom, white, rgba(255, 255, 255, .92));
 
         .nav-brand .icon {
@@ -25,12 +44,7 @@ body > main {
         }
 
         &:not(.minimized) {
-            background: linear-gradient(to bottom, black, transparent);
             border: none;
-
-            .nav-brand, .nav-sections, .nav-tools {
-                filter: invert(1);
-            }
         }
 
         transition: background .2s ease-out;
@@ -88,6 +102,8 @@ body > main {
 
 .hero-container {
     &.full-screen {
+        margin: 0;
+
         .hero.block {
             min-height: 100vh;
             padding: unset;
@@ -152,6 +168,39 @@ body > main {
     }
 }
 
+.section.info-section {
+
+    &.ribbon-bg {
+        background: rgba(163, 162, 163, .11)
+    }
+
+    padding: 80px 0;
+
+    h1, h2, h3, h4, h5, h6 {
+        &::after {
+            display: none;
+        }
+    }
+    h2 {
+        line-height: 1.28;
+        color: rgba(0, 0, 0, .87);
+        font-size: 60px;
+        font-weight: 300;
+        letter-spacing: -1px;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    p {
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: rgba(39, 48, 67, 0.9);
+        padding-right: 20px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+}
+
 .godrej-single-block {
 
     * {
@@ -159,7 +208,7 @@ body > main {
     }
 
     & > .columns-wrapper {
-        max-width: 1500px;
+        max-width: 1400px;
         padding-bottom: 100px;
         padding-top: 100px;
 
