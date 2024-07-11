@@ -167,9 +167,13 @@ main .section.godrej-carousel-type-b {
     align-items: center;
     justify-content: space-between;
     z-index: 2;
-    background-color: #ad1e56;
 }
 
+.carousel.carousel-type-b .carousel-navigation-buttons button
+{
+background-color: #ad1e56;
+background: #ad1e56;
+}
 .carousel.carousel-type-b .carousel-slide-indicator{
     display: none;
 }
