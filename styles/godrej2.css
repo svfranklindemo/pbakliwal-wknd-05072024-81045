@@ -104,14 +104,14 @@
     content: none;
 }
 
-.godrej-carousel-type-b .carousel-slide-content {
+.carousel.carousel-type-b .carousel-slide .carousel-slide-content .carousel-slide-content {
     width: 100%;
     padding: 0;
     background-color: white;
 }
 
-.godrej-carousel-type-b .carousel-slide-content h2,
-.godrej-carousel-type-b .carousel-slide-content p {
+.carousel.carousel-type-b .carousel-slide .carousel-slide-content h2,
+.carousel.carousel-type-b .carousel-slide .carousel-slide-content p:first-of-type {
     font-weight: 400;
     color: rgb(39, 48, 67);
     text-overflow: ellipsis;
@@ -127,11 +127,30 @@
     margin: 0;
 }
 
-.godrej-carousel-type-b .carousel-slide-content h2 {
-
+.carousel.carousel-type-b .carousel-slide .carousel-slide-content h2 {
+    color: rgb(39, 48, 67);
     font-size: 60px;
 }
 
-.godrej-carousel-type-b .carousel-slide-content p {
+.carousel.carousel-type-b .carousel-slide .carousel-slide-content p:first-of-type {
+    color: rgba(39, 48, 67, 0.50);
     font-size: 20px;
+    margin-top: 20px;
+}
+
+.carousel.carousel-type-b .carousel-slide .carousel-slide-content a.button-primary {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: normal;
+    padding: 7px 15px;
+    display: inline-block;
+    background: #1a78e5;
+    border-radius: 4px;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
 }
