@@ -132,7 +132,9 @@ main .section.godrej-carousel-type-b {
     color: rgb(39, 48, 67);
     font-size: 60px;
 }
-
+.carousel.carousel-type-b .carousel-slide .carousel-slide-content h2::after{
+    content: none;
+}
 .carousel.carousel-type-b .carousel-slide .carousel-slide-content p:first-of-type {
     color: rgba(39, 48, 67, 0.50);
     font-size: 20px;
@@ -155,7 +157,7 @@ main .section.godrej-carousel-type-b {
     -ms-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
 }
-carousel.carousel-type-b .carousel-navigation-buttons{
+.carousel.carousel-type-b .carousel-navigation-buttons{
     position: absolute;
     top: -12%;
     transform: translateY(-50%);
