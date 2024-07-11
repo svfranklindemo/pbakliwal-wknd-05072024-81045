@@ -18,7 +18,7 @@
 }
 
 .carousel-type-a .carousel-slide {
-    max-height: 300px;
+    max-height: 360px;
     border-radius: 20px;
     width: 100%;
     overflow: hidden;
@@ -55,6 +55,7 @@
     font-style: normal;
     letter-spacing: -.4px;
     margin-bottom: 20px;
+    margin-right: 60px;
 }
 
 .carousel-type-a a.button-primary{
@@ -73,4 +74,8 @@
     -o-transition: all .15s ease-in-out;
     -ms-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
+}
+
+.godrej-carousel-block.carousel-container{
+    max-width: 1000px;
 }
