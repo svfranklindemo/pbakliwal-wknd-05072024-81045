@@ -81,7 +81,7 @@
 }
 
 /* type b css*/
-.godrej-carousel-type-b {
+main .section.godrej-carousel-type-b {
     width: 100%;
     border: 1px solid #E8EBF7;
     border-radius: 10px;
@@ -98,13 +98,14 @@
     font-weight: 500;
     margin: 0;
     padding: 0;
+    margin-bottom: 35px;
 }
 
 .godrej-carousel-type-b .default-content-wrapper h2::after {
     content: none;
 }
 
-.carousel.carousel-type-b .carousel-slide .carousel-slide-content .carousel-slide-content {
+.carousel.carousel-type-b .carousel-slide .carousel-slide-content {
     width: 100%;
     padding: 0;
     background-color: white;
@@ -154,3 +155,21 @@
     -ms-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
 }
+carousel.carousel-type-b .carousel-navigation-buttons{
+    position: absolute;
+    top: -12%;
+    transform: translateY(-50%);
+    left: 61.5rem;
+    right: 9.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    background-color: #ad1e56;
+}
+
+.carousel.carousel-type-b .carousel-slide-indicator{
+    display: none;
+}
+
+    
