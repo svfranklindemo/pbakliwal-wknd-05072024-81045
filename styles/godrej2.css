@@ -87,50 +87,51 @@
     border-radius: 10px;
     padding: 65px;
 
-    .default-content-wrapper h2 {
-        line-height: 1.28;
-        color: rgba(0, 0, 0, .87);
-        width: fit-content;
-        margin: 0;
-        font-size: 18px;
-        font-weight: 500;
-        margin: 0;
-        padding: 0;
-    }
+}
 
-    .default-content-wrapper h2::after {
-        content: none;
-    }
+.godrej-carousel-type-b .default-content-wrapper h2 {
+    line-height: 1.28;
+    color: rgba(0, 0, 0, .87);
+    width: fit-content;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
 
-    .carousel-slide-content {
-        width: 100%;
-        padding: 0;
-        background-color: white;
+.godrej-carousel-type-b .default-content-wrapper h2::after {
+    content: none;
+}
 
-        h2,
-        p {
-            font-weight: 400;
-            color: rgb(39, 48, 67);
-            text-overflow: ellipsis;
-            overflow: hidden;
-            display: -moz-box;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -moz-box-orient: vertical;
-            line-height: 1.2;
-            -webkit-line-clamp: 2;
-            letter-spacing: -1px;
-            padding: 0;
-            margin: 0;
-        }
+.godrej-carousel-type-b .carousel-slide-content {
+    width: 100%;
+    padding: 0;
+    background-color: white;
+}
 
-        h2 {
+.godrej-carousel-type-b .carousel-slide-content h2,
+.godrej-carousel-type-b .carousel-slide-content p {
+    font-weight: 400;
+    color: rgb(39, 48, 67);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -moz-box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    line-height: 1.2;
+    -webkit-line-clamp: 2;
+    letter-spacing: -1px;
+    padding: 0;
+    margin: 0;
+}
 
-            font-size: 60px;
-        }
+.godrej-carousel-type-b .carousel-slide-content h2 {
 
-        p {
-            font-size: 20px;
-        }
-    }
+    font-size: 60px;
+}
+
+.godrej-carousel-type-b .carousel-slide-content p {
+    font-size: 20px;
 }
