@@ -1,0 +1,24 @@
+.godrej-carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.godrej-carousel .card {
+    min-width: 249px;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Hide all cards except the first 4 */
+.godrej-carousel-wrapper .card {
+    display: none;
+    transition: transform 0.3s ease; /* Add transition property for sliding effect */
+}
+
+.godrej-carousel-wrapper .card:nth-child(-n+4) {
+    display: block;
+    transform: translateX(0); /* Initial position for visible cards */
+}
