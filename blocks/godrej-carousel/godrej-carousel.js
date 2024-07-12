@@ -1,22 +1,29 @@
 // script.js
 export default async function decorate(block) {
+    const template = "<a href='[href]' class='itemInner'><div class='itemTxt'><div class='itemTxtTop'><span class='itemTxtTopEditor'>[Author]</span><span class='itemTxtTopDate'>[PublishedDate]</span></div><h3>[Title]</h3></div></a>";
+
     const firstChildDiv = block.querySelector('div:first-child');
     const innerChildDiv = firstChildDiv.querySelector('div');
-    firstChildDiv.classList.add('godrejCarousel-container');
+    firstChildDiv.classList.add('carousel-content');
     innerChildDiv.classList.add('content');
-    const carousel = document.querySelector('.godrej-carousel');
+
+    const newDiv = document.createElement('div');
+    newDiv.classList.add("carousel-cards")
+    firstChildDiv.insertAdjacentElement('afterend', newDiv);
+
+    const carousel = document.querySelector('.carousel-cards');
 
     // Create a new button element
     const button = document.createElement('button');
     button.id = 'nextBtn'; // Customize the button text
-    button.textContent = 'nextBtn';
+    button.textContent = "Next"
 
     // Append the button to the div
     carousel.insertAdjacentElement('afterend', button);
 
     const button2 = document.createElement('button');
     button2.id = 'prevBtn';
-    button2.textContent = 'prevBtn';
+    button2.textContent = "Prev"
     carousel.insertAdjacentElement('afterend', button2);
 
     const prevBtn = document.getElementById('prevBtn');
@@ -25,7 +32,7 @@ export default async function decorate(block) {
     let cards = [];
 
 
-    const articleApiUrl = block.dataset.articleapi;
+    const articleApiUrl = "/godrej-data/articles-list.json";
     const jsonDataUrl = window.origin + articleApiUrl;
     // Carousel navigation
     let currentIndex = 0;
@@ -36,11 +43,17 @@ export default async function decorate(block) {
         .then(data => {
 
             // Create cards
-            data.data.forEach(item => {
+            data.data.forEach((item, index) => {
                 const card = document.createElement('div');
                 card.classList.add('card');
-                card.textContent = item.Title; // Customize this based on your data structure
+                let temp = template;
+                temp = temp.replace("[href]",item.Link);
+                temp = temp.replace("[Author]",item.Author);
+                temp = temp.replace("[PublishedDate]",item.PublishedDate);
+                temp = temp.replace("[Title]",item.Title);
+                card.innerHTML = temp;
                 carousel.appendChild(card);
+
             });
             // Show the first 4 cards initially
             cards = document.querySelectorAll('.godrej-carousel-wrapper .card');
@@ -73,3 +86,4 @@ export default async function decorate(block) {
     });
 
 }
+
