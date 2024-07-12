@@ -115,6 +115,7 @@
 #prevBtn,#nextBtn{
     position: relative;
     top:-115px;
+    cursor: pointer;
 }
 
 #nextBtn{
