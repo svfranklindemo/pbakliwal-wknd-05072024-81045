@@ -24,6 +24,7 @@
 
 .section.godrej-carousel-container{
     background-color: #F8F8F8;
+    margin-top: 100px;
 }
 .godrej-carousel{
     .carousel-content{
@@ -117,5 +118,31 @@
 }
 
 #nextBtn{
-    left: 92%;
+    left: 96%;
+}
+
+#prevBtn{
+    border: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    background: url(/icons/chevron-left.svg) left 3px top 2px / 19px no-repeat;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px;
+    outline: 0;
+}
+
+#nextBtn{
+    border: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    background: url(/icons/chevron-right.svg) left 3px top 2px / 19px no-repeat;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px;
+    outline: 0;
 }

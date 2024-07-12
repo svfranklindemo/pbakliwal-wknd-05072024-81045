@@ -15,15 +15,13 @@ export default async function decorate(block) {
 
     // Create a new button element
     const button = document.createElement('button');
-    button.id = 'nextBtn'; // Customize the button text
-    button.textContent = "Next"
+    button.id = 'nextBtn'; 
 
     // Append the button to the div
     carousel.insertAdjacentElement('afterend', button);
 
     const button2 = document.createElement('button');
     button2.id = 'prevBtn';
-    button2.textContent = "Prev"
     carousel.insertAdjacentElement('afterend', button2);
 
     const prevBtn = document.getElementById('prevBtn');
