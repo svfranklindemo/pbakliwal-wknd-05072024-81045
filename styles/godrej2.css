@@ -76,6 +76,25 @@
     transition: all .15s ease-in-out;
 }
 
+.carousel.carousel-type-a .carousel-navigation-buttons button::after {
+    height: 10px;
+    width: 10px;
+}
+
+.carousel.carousel-type-a .carousel-navigation-buttons {
+    left: -0.5rem;
+    right: -0.5rem;
+}
+
+.carousel.carousel-type-a .carousel-navigation-buttons button,
+.carousel.carousel-type-a .carousel-navigation-buttons button:hover {
+    background-color: transparent;
+}
+
+.carousel.carousel-type-a .carousel-slide-indicators {
+    display: none;
+}
+
 .godrej-carousel-block.carousel-container {
     max-width: 1000px;
 }
@@ -132,9 +151,11 @@ main .section.godrej-carousel-type-b {
     color: rgb(39, 48, 67);
     font-size: 60px;
 }
-.carousel.carousel-type-b .carousel-slide .carousel-slide-content h2::after{
+
+.carousel.carousel-type-b .carousel-slide .carousel-slide-content h2::after {
     content: none;
 }
+
 .carousel.carousel-type-b .carousel-slide .carousel-slide-content p:first-of-type {
     color: rgba(39, 48, 67, 0.50);
     font-size: 20px;
@@ -157,9 +178,10 @@ main .section.godrej-carousel-type-b {
     -ms-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
 }
-.carousel.carousel-type-b .carousel-navigation-buttons{
+
+.carousel.carousel-type-b .carousel-navigation-buttons {
     position: absolute;
-    top: -12%;
+    top: -16%;
     transform: translateY(-50%);
     left: 61.5rem;
     right: 9.5rem;
@@ -169,13 +191,20 @@ main .section.godrej-carousel-type-b {
     z-index: 2;
 }
 
-.carousel.carousel-type-b .carousel-navigation-buttons button
-{
-background-color: #ad1e56;
-background: #ad1e56;
+.carousel.carousel-type-b .carousel-navigation-buttons button {
+    background-color: #ad1e56;
+    background: #ad1e56;
 }
-.carousel.carousel-type-b .carousel-slide-indicator{
+
+.carousel.carousel-type-b .carousel-navigation-buttons button:hover {
+    background-color: #ad1e56;
+    background: #ad1e56;
+}
+
+.carousel.carousel-type-b .carousel-slide-indicator {
     display: none;
 }
 
-    
+.carousel.carousel-type-b .carousel-slides {
+    min-height: 220px;
+}
