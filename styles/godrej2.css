@@ -96,7 +96,7 @@
 }
 
 .godrej-carousel-block.carousel-container {
-    /* max-width: 1000px; */
+    max-width: unset;
 }
 
 /* type b css*/
