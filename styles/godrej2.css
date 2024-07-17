@@ -18,7 +18,7 @@
 }
 
 .carousel-type-a .carousel-slide {
-    max-height: 360px;
+    max-height: 500px;
     border-radius: 20px;
     width: 100%;
     overflow: hidden;
@@ -96,7 +96,7 @@
 }
 
 .godrej-carousel-block.carousel-container {
-    max-width: 1000px;
+    /* max-width: 1000px; */
 }
 
 /* type b css*/
