@@ -29,7 +29,7 @@
     margin: 0;
     padding: 0;
     font-weight: 400;
-    margin-top: 20%;
+    margin-top: 20%; /*sm puts changes*/
     margin-left: 60px;
     margin-bottom: 5px;
     color: #fff;
@@ -96,6 +96,7 @@
 }
 
 .godrej-carousel-block.carousel-container {
+    /*sm puts changes*/
     max-width: unset;
 }
 
@@ -105,7 +106,11 @@ main .section.godrej-carousel-type-b {
     border: 1px solid #E8EBF7;
     border-radius: 10px;
     padding: 65px;
-
+    
+    /*sm puts changes*/
+    max-width: 1400px;
+    box-sizing: border-box;
+    margin: 90px auto;
 }
 
 .godrej-carousel-type-b .default-content-wrapper h2 {
@@ -183,8 +188,8 @@ main .section.godrej-carousel-type-b {
     position: absolute;
     top: -16%;
     transform: translateY(-50%);
-    left: 61.5rem;
-    right: 9.5rem;
+    left: unset; /*sm puts changes*/
+    right: 0; /*sm puts changes*/
     display: flex;
     align-items: center;
     justify-content: space-between;
