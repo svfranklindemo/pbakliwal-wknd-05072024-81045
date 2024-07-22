@@ -84,7 +84,7 @@
     -moz-box-orient: vertical;
     line-height: 1.4;
     -webkit-line-clamp: 3;
-    height: calc(20px* 1.4* 3);
+    /*height: calc(20px* 1.4* 3);*/ /* sm puts changes */
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 18px;
