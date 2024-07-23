@@ -183,6 +183,11 @@ header nav .nav-brand a {
 
 header nav .nav-brand img {
   height: auto;
+  @media (width<=768px) {
+    &{
+      width: 100px;
+    }
+  }
 }
 
 /* sections */
