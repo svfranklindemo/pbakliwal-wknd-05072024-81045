@@ -83,8 +83,10 @@ function createSlide(row, slideIndex, carouselId) {
 
     if (!isImage) {
       const link = column.querySelector('.button-container > a');
-      link.classList.remove('button');
-      link.classList.add('button-primary');
+      if (link) {
+        link.classList.remove('button');
+        link.classList.add('button-primary');
+      }
     }
   });
 

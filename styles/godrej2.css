@@ -29,7 +29,8 @@
     margin: 0;
     padding: 0;
     font-weight: 400;
-    margin-top: 20%; /*sm puts changes*/
+    margin-top: 20%;
+    /*sm puts changes*/
     margin-left: 60px;
     margin-bottom: 5px;
     color: #fff;
@@ -106,7 +107,7 @@ main .section.godrej-carousel-type-b {
     border: 1px solid #E8EBF7;
     border-radius: 10px;
     padding: 65px;
-    
+
     /*sm puts changes*/
     max-width: 1400px;
     box-sizing: border-box;
@@ -186,10 +187,12 @@ main .section.godrej-carousel-type-b {
 
 .carousel.carousel-type-b .carousel-navigation-buttons {
     position: absolute;
-    top: -16%;
+    top: -21%;
     transform: translateY(-50%);
-    left: unset; /*sm puts changes*/
-    right: 0; /*sm puts changes*/
+    left: unset;
+    /*sm puts changes*/
+    right: 0;
+    /*sm puts changes*/
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -199,6 +202,7 @@ main .section.godrej-carousel-type-b {
 .carousel.carousel-type-b .carousel-navigation-buttons button {
     background-color: #ad1e56;
     background: #ad1e56;
+    margin-right: 1px;
 }
 
 .carousel.carousel-type-b .carousel-navigation-buttons button:hover {
@@ -212,4 +216,82 @@ main .section.godrej-carousel-type-b {
 
 .carousel.carousel-type-b .carousel-slides {
     min-height: 220px;
+}
+
+.godrej-pdp {
+    .dropin-design .dropin-button--primary {
+        color: #fff;
+        background: #1a78e5;
+    }
+}
+
+.columns.user-manual {
+    margin-top: 60px;
+
+    &>div {
+        max-width: 300px;
+    }
+
+    a.button {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        color: #273043;
+        letter-spacing: normal;
+        padding: 10px 13px 12px;
+        float: left;
+        margin-bottom: 5px;
+        background: #fff;
+        border: 1px solid #e8ebf7;
+        border-radius: 10px;
+    }
+
+    a.button:hover {
+        text-decoration: none;
+        color: #fff;
+        background: #1a78e5;
+        border-color: #1a78e5;
+    }
+}
+
+.carousel.carousel-type-b.v2 {
+    .carousel-slide {
+        flex: 0 0 24%;
+    }
+
+    .carousel-slide-image {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 18px;
+        color: #273043;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    p:nth-of-type(2) {
+        font-size: 16px;
+        color: rgba(0, 0, 0, .6);
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+    }
+    .carousel-slides{
+        gap: 15px;
+    }
+    .carousel-navigation-buttons{
+        top: -11%;
+    }
+
+    @media (width<=768px) {
+        .carousel-slide {
+            flex: 0 0 99%;
+        }
+    }
+    @media (width<=1024px) {
+        .carousel-slide {
+            flex: 0 0 49%;
+        }
+    }
 }
