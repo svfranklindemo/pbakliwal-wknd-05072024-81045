@@ -304,6 +304,6 @@ main .section.godrej-carousel-type-b {
 
 @media (width<=768px) {
     .dropin-image {
-        height: 320px;
+        height: 320px !important;
     }
 }
