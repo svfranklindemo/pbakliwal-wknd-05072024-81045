@@ -22,7 +22,7 @@ export default async function decorate(block) {
         defaultPageSizeOption: '24',
       },
       minQueryLength: '2',
-      currencySymbol: '$',
+      currencySymbol: '₹',
       currencyRate: '1',
       displayOutOfStock: true,
       allowAllProducts: false,
