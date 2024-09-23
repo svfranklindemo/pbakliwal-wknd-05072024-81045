@@ -284,14 +284,26 @@ main .section.godrej-carousel-type-b {
         top: -11%;
     }
 
-    @media (width<=768px) {
-        .carousel-slide {
-            flex: 0 0 99%;
-        }
-    }
     @media (width<=1024px) {
         .carousel-slide {
             flex: 0 0 49%;
         }
+    }
+    @media (width<=768px) {
+        .carousel-slide {
+            flex: 0 0 90%;
+        }
+    }
+
+    .carousel-slide{
+        .carousel-slide-image picture > img {
+            height: 200px;
+        }
+    }
+}
+
+@media (width<=768px) {
+    .dropin-image {
+        height: 320px;
     }
 }
